@@ -12,9 +12,14 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.15.0'
+    // Commenting out below to try newer version
+//        testImplementation 'org.seleniumhq.selenium:selenium-java:4.15.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+    // Version below from Makers is still latest
     testImplementation 'org.seleniumhq.selenium:selenium-http-jdk-client:4.13.0'
-    testImplementation 'io.github.bonigarcia:webdrivermanager:5.6.1'
+    // Commenting out below to try newer version
+//    testImplementation 'io.github.bonigarcia:webdrivermanager:5.6.1'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
 }
 
 test {
